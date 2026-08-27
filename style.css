@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        1deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgb(67, 48, 187) 100%
+    );
+    min-height: 100vh;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(13, 115, 205, 0.058);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(4, 29, 255);
+    cursor: pointer;
+}
+
+section {
+    padding: 32px;
+    margin: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.conteudo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 36px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.bem-vindo {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+}
+
+.formacao {
+    background: white;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.formacao h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.formacao-item {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 4px solid #3426a8;
+}
+
+.formacao-item h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.formacao-item p {
+    font-size: 18px;
+    margin: 5px 0 0;
+    color: #444;
+}
+
+.skill {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    width: 500px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills ul li {
+    margin: 20px 0;
+}
+
+.barras {
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.barras > span {
+    display: block;
+    height: 20px;
+    background: linear-gradient(
+        to right,
+        #3426a8,
+        #020024
+    );
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.html {
+    width: 70%;
+}
+
+.css {
+    width: 60%;
+}
+
+.java {
+    width: 50%;
+}
+
+.c {
+    width: 74%;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    gap: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.hobby:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hobby i {
+    font-size: 32px;
+    color: #3f4e58;
+    min-width: 40px;
+}
+
+.hobby h3 {
+    margin-bottom: 8px;
+}
+
+.hobby p {
+    color: #3f4e45;
+}
+
+.gifs {
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(137, 36, 150, 1) 100%
+    );
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icones a {
+    color: #3426a8;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icones a:hover {
+    color: #892496;
+    transform: translateX(5px);
+}
+
+.icones i {
+    width: 30px;
+}
+
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+nav ul li {
+    display: block;
+    margin: 8px 0;
+}
+
+.conteudo {
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo img {
+    width: 250px;
+    height: 250px;
+}
+
+.texto h1 {
+    font-size: 30px;
+}
+
+.texto h2 {
+    font-size: 20px;
+}
+
+ .cards {
+    flex-direction: column;
+}
+
+.skills {
+    width: 100%;
+}
+
+.hobby {
+    flex-wrap: wrap;
+}
+
+ .gifs {
+    margin-left: auto;
+}}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333;
+  color: #fff;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: #13c313;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.wrapper a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contato">Fale Comigo</a></li>
+                <li><a href="#redes">Redes Sociais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <div class="conteudo" id="sobre">
+        <img src="./img/matheus.jpeg" alt="Minha imagem">
+
+        <div class="texto">
+            <p class="bem-vindo">Bem-Vindos</p>
+            <br>
+            <br>
+
+            <h1>Matheus Dorigan Paiato</h1>
+            <br>
+
+            <h2>Tec. Desenvolvimento de Sistemas em Formação</h2>
+        </div>
+    </div>
+
+    <br>
+
+    <section class="formacao" id="formacao">
+        <h1>Formação</h1>
+
+        <div class="formacao-item">
+            <h2>Ensino Fundamental</h2>
+            <p>Ensino fundamental completo</p>
+        </div>
+
+        <div class="formacao-item">
+            <h2>FMT</h2>
+            <p>Formalizante para o mundo de trabalho</p>
+        </div>
+
+        <div class="formacao-item">
+            <h2>Inglês</h2>
+            <p>Inglês intermediário</p>
+        </div>
+
+        <div class="formacao-item">
+            <h2>Administração</h2>
+            <p>Curso de administração</p>
+        </div>
+
+        <div class="formacao-item">
+            <h2>Química</h2>
+            <p>Curso de Química</p>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="skill">
+        <div class="skills">
+            <h1>Minhas Habilidades</h1>
+
+            <ul>
+                <li>
+                    <h3>HTML</h3>
+                    <span class="barras">
+                        <span class="html"></span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>CSS</h3>
+                    <span class="barras">
+                        <span class="css"></span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                    <span class="barras">
+                        <span class="java"></span>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>C</h3>
+                    <span class="barras">
+                        <span class="c"></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Better Task</h3>
+                    <p>
+                        Projeto escolar para organização do sistema de
+                        tarefas de casa e trabalhos. (Shark-Tank)
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>    </h3>
+                    <p>
+                        Novos projetos serão adicionados aqui.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Meus Hobbies</h2>
+
+            <br>
+
+            <div class="hobbies">
+
+                <div class="hobby">
+                    <i class="fa-solid fa-gamepad"></i>
+
+                    <div>
+                        <h3>Jogar</h3>
+                        <p>Jogar jogos eletrônicos</p>
+                    </div>
+
+                    <img
+                        class="gifs"
+                        src="./img/gameplay.gif"
+                        alt="Gameplay">
+                </div>
+
+                <div class="hobby">
+                    <i class="fa-solid fa-music"></i>
+
+                    <div>
+                        <h3>Músicas</h3>
+                        <p>Escutar músicas</p>
+                    </div>
+
+                    <img
+                        class="gifs"
+                        src="./img/hamster.gif"
+                        alt="Hamster">
+                </div>
+
+                <div class="hobby">
+                    <i class="fa-brands fa-twitch"></i>
+
+                    <div>
+                        <h3>Twitch</h3>
+                        <p>Assisto lives pela Twitch</p>
+                    </div>
+
+                    <img
+                        class="gifs"
+                        src="./img/alanzoka1.gif"
+                        alt="Twitch">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Fale comigo</h2>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    required>
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    required></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+<ul class="wrapper">
+
+<a href="https://github.com/matheuszinpaiato-maker" target="_blank">
+  <li class="icon github">
+    <span class="tooltip">GitHub</span>
+    <i class="fa-brands fa-github"></i>
+  </li>
+</a> 
+
+<a href="https://wa.me/5519971099241" target="_blank">
+  <li class="icon whatsapp">
+    <span class="tooltip">whatsApp</span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </li>
+</a>  
+
+<a href="https://www.instagram.com/matheus_paiat0/" target="_blank">
+  <li class="icon instagram">
+    <span class="tooltip">Instagram</span>
+    <i class="fa-brands fa-instagram"></i>
+  </li>
+</a>
+
+</ul>
+<script src="https://kit.fontawesome.com/SEU_CODIGO.js" crossorigin="anonymous"></script>
+
+    <footer>
+        <p>&copy; 2026 Meu Portfólio</p>
+    </footer>
+
+</body>
+</html>
