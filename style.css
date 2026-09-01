@@ -109,6 +109,7 @@ h2 {
 }
 
 .formacao {
+    display:flex;
     background: white;
     width: calc(100% - 40px);
     margin: 20px auto;
@@ -446,4 +447,14 @@ nav ul li {
 .wrapper a {
   color: inherit;
   text-decoration: none;
+}
+.gif-homer {
+    border-radius: 10px;
+    transform: scaleX(-1);
+    height: auto;
+}
+.container-formacao{
+    display:flex;
+    gap: 500px;
+    align-items: center;
 }
